@@ -209,3 +209,52 @@ section {
         }
     }
 }
+
+#projects {
+    background-color: $bg-color;
+    height: 80vh;
+
+    .pro2 {
+        background-color: $secondary-color;
+        color: #fff;
+        a {
+            button {
+                background-color: $primary-color !important;
+            }
+        }
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: calc(100% / 3);
+        text-align: center;
+        h1 {
+            font-size: $xl-size;
+        }
+        p {
+            color: $font-color;
+        }
+        img {
+            margin: 20px 0px;
+            width: 100%;
+            border-radius: 4px;
+        }
+        a {
+            width: 100%;
+
+            button {
+                width: 100%;
+                cursor: pointer;
+                height: 40px;
+                background-color: $secondary-color;
+                border: none;
+                border-radius: 3px;
+                color: #fff;
+                font-size: $normal-size;
+            }
+        }
+    }
+}
