@@ -1,5 +1,5 @@
 window.onscroll = () => {
-    const nav = document.querySelector('.nav');
+    const nav = document.querySelector('nav');
     if (this.scrollY <= 20) nav.style.background = 'transparent'; else nav.style.background = '#fff';
 };
 
