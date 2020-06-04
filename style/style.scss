@@ -5,15 +5,21 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 $bg-color: #fff;
 $primary-color: #f6cd61;
 $secondary-color: #0e9aa7;
 $font-color: #4a4e4d;
 
+$xl-size: 50px;
 $big-size: 27px;
 $normal-size: 18px;
 $small-size: 15px;
+
+$padding: 15vh 5%;
 
 a {
     text-decoration: none;
@@ -21,6 +27,7 @@ a {
 }
 
 nav {
+    z-index: 10;
     width: 100%;
     padding: 20px 5%;
     display: flex;
@@ -71,10 +78,10 @@ section {
     width: 100%;
     height: 100vh;
     display: flex;
-    padding: 15vh 5%;
 }
 
 #home {
+    padding: $padding;
     .flag {
         position: fixed;
         top: 0;
@@ -169,5 +176,36 @@ section {
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+#about {
+    background-color: $primary-color;
+    .about-text {
+        padding: $padding;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        h1 {
+            font-size: $xl-size;
+        }
+        p {
+            background-color: $bg-color;
+            padding: 25px 15px;
+            width: 80%;
+            margin: 10px 0px;
+            font-size: $normal-size;
+        }
+    }
+    .about-image {
+        padding: $padding;
+        width: 40%;
+        height: 100%;
+        background-color: $bg-color;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
