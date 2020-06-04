@@ -182,6 +182,7 @@ section {
 #about {
     background-color: $primary-color;
     .about-text {
+        line-height: 35px;
         padding: $padding;
         display: flex;
         flex-direction: column;
@@ -215,8 +216,8 @@ section {
     height: 80vh;
 
     .pro2 {
-        background-color: $secondary-color;
-        color: #fff;
+        background-color: rgb(246, 246, 246);
+        color: rgb(153, 153, 153);
         a {
             button {
                 background-color: $primary-color !important;
@@ -257,4 +258,31 @@ section {
             }
         }
     }
+}
+
+#contact {
+    padding: $padding;
+    height: 80vh;
+    .contact-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h1 {
+            font-size: $xl-size;
+        }
+        .contact-items {
+            display: flex;
+            justify-content: space-around;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+footer {
+    height: 20vh;
+    width: 100%;
 }

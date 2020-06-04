@@ -272,6 +272,7 @@ section {
 }
 
 #about .about-text {
+  line-height: 35px;
   padding: 15vh 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,8 +317,8 @@ section {
 }
 
 #projects .pro2 {
-  background-color: #0e9aa7;
-  color: #fff;
+  background-color: #f6f6f6;
+  color: #999999;
 }
 
 #projects .pro2 a button {
@@ -370,5 +371,45 @@ section {
   border-radius: 3px;
   color: #fff;
   font-size: 18px;
+}
+
+#contact {
+  padding: 15vh 5%;
+  height: 80vh;
+}
+
+#contact .contact-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#contact .contact-text h1 {
+  font-size: 50px;
+}
+
+#contact .contact-text .contact-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#contact .contact-text .contact-items img {
+  width: 100px;
+  height: 100px;
+}
+
+footer {
+  height: 20vh;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
